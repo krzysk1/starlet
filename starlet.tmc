@@ -1,0 +1,132 @@
+<[file][][]
+// ACF shifted [m] x:1.1 y:0 z:0
+// Cockpit type: General Aviation
+// Vso_kts: 47.0 stall speed in landing configuration
+// Vs_kts: 47.0 stall speed
+// Vfe1_kts: 999.0 flaps extended 1st dep
+// Vle_kts: 99999.0 maximum landing-gear extended speed
+// Vno_kts: 130.0 maximum structural cruising speed or maximum speed for normal operations
+// Vne_kts: 159.0 never exeed speed
+// V_ref_ms:  reference speed for final approach, normally 1.3Vso
+// Empty mass [lb]: 450 [kg]: 204.1
+// Fuel mass [lb]: 66 [kg]: 29.9 => about [L]: 38.4
+// max mass [lb]: 750 [kg]: 340.2
+// model mass [lb]: 516 [kg]: 234.1
+// load G: -4.5 to 4.5
+// Ground altitude: 3.5596 2.94 deg
+// Propeller 0 [1.191 0.000 -0.018]  blades 2 CW  radius [m] 0.686 mass [kg] 7.5
+// Max HP power: 65.0 (48.5 kW)
+// TCAS equiped
+// Radio COMM equiped
+// Stall warning AOA 10.0
+//   no|area|R0|R1|T0|T1|span|Croot|Ctip|x|y|z|fl0|fl1|flb|L_R|name|description
+//   0|0.126|Clark-Y (good propeller).afl ||||0.686|0.114|0.254|1.076|-0.343|0.000||||R|Propeller|
+//   8|3.322|NACA 43012A.afl  CHECK IT||||2.725|1.219|1.219|-0.284|1.355|-0.284|ailn1|||L|LeftWing|
+//   9|3.322|NACA 43012A.afl  CHECK IT||||2.725|1.219|1.219|-0.284|-1.355|-0.284|ailn1|||R|RightWing|
+//   10|0.088|NACA 43012A.afl  CHECK IT||||0.107|0.975|0.671|-0.169|2.763|-0.138||||L|LeftWing2|
+//   11|0.088|NACA 43012A.afl  CHECK IT||||0.107|0.975|0.671|-0.169|-2.763|-0.138||||R|RightWing2|
+//   16|0.649|NACA 0009 (symmetrical).afl ||||0.917|0.765|0.649|-2.417|0.498|0.110|elev1|elev2||L|LeftStabilizer|
+//   17|0.649|NACA 0009 (symmetrical).afl ||||0.917|0.765|0.649|-2.417|-0.498|0.110|elev1|elev2||R|RightStabilizer|
+//   18|1.030|NACA 0009 (symmetrical).afl ||||1.128|1.021|0.805|-2.696|0.000|0.441|rudd1|inc_rudd1||R|VertStabilizer1|
+//   19|0.033|NACA 0009 (symmetrical).afl ||||0.113|0.518|0.061|-2.705|0.000|1.058|inc_rudd1|||R|VertStabilizer2|
+//   parts no|radius|name|size x*y*z|Cd|description|
+//   56|3.0|Fuselage|3.105 0.601 1.101|0.093000002|Fuselage
+//   57|3.0|MiscBody1|0.839 0.739 0.283|0.075000003|Nose & Spinner
+//   77|2.0|Nacelle1|0.259 0.310 0.305|0.075999998|leftenginenacelle
+//   85|3.0|Fairing1|0.629 0.241 0.304|0.096000001|main fairing right
+//   86|3.0|Fairing2|0.629 0.241 0.304|0.096000001|hgiReG tW raleehnaP 
+//   gear no|name|X|Y|Z|Type|Fraction|Length|radius|retract|SteerLo|SteerHi|weight|width
+//   gear 0|LeftWheelHull|0.271|0.253|-0.363|2|0.447|0.732|0.171|0.000|0.0000|0.0000|11.4|0.152
+//   gear 1|RightWheelHull|0.271|-0.253|-0.363|2|0.447|0.732|0.171|0.000|0.0000|0.0000|11.4|0.152
+//   gear 2|TailWheelHull|-2.744|0.000|-0.076|2|0.105|0.366|0.061|0.000|0.5236|0.5236|3.6|0.037
+// CG range: 0.08 to 0.03
+// Rigidbody: Fuselage 141.5 kg at 0.082
+// Rigidbody: 8 LeftWing 29.3 kg at -0.284
+// Rigidbody: 9 RightWing 29.3 kg at -0.284
+// Gearbody: 0 LeftWheelHull 11.4 kg at 0.271
+// Gearbody: 1 RightWheelHull 11.4 kg at 0.271
+// Gearbody: 2 TailWheelHull 3.6 kg at -2.744
+// CG (fuselage): 0.082 (plane) -0.037 (delta) 0.072
+// Plane ref: undefined
+//   empty craft 204.1 kg at 0.021008
+//   fuel tank #1 32.9 kg at 0.551360
+//   fuel tank #2 0.5 kg at 1.100000
+//   fuel tank #3 0.5 kg at 1.100000
+//   fuel tank #4 0.5 kg at 1.100000
+//   fuel tank #5 0.5 kg at 1.100000
+//   fuel tank #6 0.5 kg at 1.100000
+//   fuel tank #7 0.5 kg at 1.100000
+//   fuel tank #8 0.5 kg at 1.100000
+//   fuel tank #9 0.5 kg at 1.100000
+//   pax 99.8 kg at -0.356944
+// Elevator -20.0 to 30.0 width 0.50 0.45 <[float64][Scaling][1.9099]>
+// Aileron -12.0 to 12.0 width 0.35 0.23 <[float64][Scaling][4.7746]>
+// Rudder -25.0 to 25.0 width 0.40 0.50 <[float64][Scaling][2.2918]>
+// Rudder2 -25.0 to 25.0 width 0.50  <[float64][Scaling][2.2918]>
+//-------------------------------------------------------
+// Corby Starlet v1.0 empty mass [kg] :204.1 fuelled [kg] :234.1 max [kg] :340.2
+//-------------------------------------------------------
+// No 0 LeftWheelHull single   
+// Brakes  Faired Fraction weight: 0.44742 kg :104.7
+// Pivot lon lat vert: 0.270944 0.252984 -0.362712
+// Extended angles   : 0.0 -49.0 0.0  lon lat axi
+// Normal angles     : 0.0 -49.0 0.0  lon lat axi
+// Length [m]: 0.7315 Radius [m]: 0.1707 Semi-width [m]: 0.0762
+// Dep_rat: NaN Scon: 2022.871582031
+// Deflection [m]- zero load : 0.0506 empty :0.0030 max :0.0061
+// Damping constants (lb/(ft/s)) :202.287155151 kg/(m/s) : 301.0365
+//-------------------------------------------------------
+// No 1 RightWheelHull single   
+// Brakes  Faired Fraction weight: 0.44742 kg :104.7
+// Pivot lon lat vert: 0.270944 -0.252984 -0.362712
+// Extended angles   : 0.0 49.0 0.0  lon lat axi
+// Normal angles     : 0.0 49.0 0.0  lon lat axi
+// Length [m]: 0.7315 Radius [m]: 0.1707 Semi-width [m]: 0.0762
+// Dep_rat: NaN Scon: 2022.871582031
+// Deflection [m]- zero load : 0.0506 empty :0.0030 max :0.0061
+// Damping constants (lb/(ft/s)) :202.287155151 kg/(m/s) : 301.0365
+//-------------------------------------------------------
+// No 2 TailWheelHull single   Steering (30.00/30.00)
+//    Fraction weight: 0.10515 kg :24.6
+// Pivot lon lat vert: -2.743528 0.000000 -0.076200
+// Extended angles   : -55.0 0.0 0.0  lon lat axi
+// Normal angles     : -55.0 0.0 0.0  lon lat axi
+// Length [m]: 0.3658 Radius [m]: 0.0610 Semi-width [m]: 0.0183
+// Dep_rat: NaN Scon: 361.227081299
+// Deflection [m]- zero load : 0.0665 empty :0.0030 max :0.0061
+// Damping constants (lb/(ft/s)) :36.122707367 kg/(m/s) : 53.7565
+//-------------------------------------------------------
+    <[object][][]
+        <[int][Version][220]>
+        <[vec32array][ContactSpheres][ (0.271 0.805 -0.843 0.171) (0.271 -0.805 -0.843 0.171) (-3.044 0.000 -0.286 0.061) ]>
+        <[string8][ICAO][CJ1]>
+        <[string8][DisplayName][Corby Starlet]>
+        <[string8][DisplayNameFull][Corby CJ-1 Starlet]>
+        <[localized_text_list][Descriptions][]
+            <[localized_text][][]
+                <[string8][Language][en]>
+                <[string8][Text][ The Corby CJ-1 Starlet is a single seat, amateur-built aeroplane designed in the 1960s by Australian aeronautical engineer John Corby. Made by Krzysztof Kaniewski. 3D model: FTLX Designs.]>
+            >
+        >
+        <[float64][MaximumTakeoffMass][340.2]>
+        <[float64][WingSpan]          [5.6]>
+        <[uint]   [Year]              [1960]>
+        <[uint]   [UnitsBuilt]        [6884]>
+        <[uint]   [EngineCount]       [1]>
+        <[float64][EnginePower]       [48470]>
+        <[float64][MinimumAirspeed]   [23.5]>
+        <[float64][ApproachAirspeed]  [30.6]>
+        <[float64][CruiseAirspeed]    [71.6]>
+        <[float64][CruiseAltitude]    [3352.8]>
+        <[float64][CruiseSpeed]       [75.5]>
+        <[float64][MaximumAirspeed]   [79.5]>
+        <[float64][MaximumAltitude]   [6306.0]>
+        <[float64][MaximumSpeed]      [79.5]>
+        <[float64][MaximumRange]      [2276000.0]>
+        <[tmvector2d][FlapAirspeedRange]   [ 0.0  0.0  ]>	
+        <[tmvector2d][NormalAirspeedRange] [ 23.5 65.0 ]>
+        <[tmvector2d][CautionAirspeedRange][ 65.0 79.5 ]>
+        <[string8][Tags][ airplane historical piston general_aviation ultralight gear tailgear ]>
+        <[string8][Pilot][]>
+    >
+>
