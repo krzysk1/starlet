@@ -1,5 +1,5 @@
-# babyace
- Corben Baby Ace for Aerofly FS4
+#starlet
+ Corby CJ-1 Starlet for Aerofly FS4
 
 This is free add-on for Aerofly FS4 created by Krzysztof Kaniewski with the Aerofly FS4 SDK, 3D model by FTLX Designs.
 
@@ -8,53 +8,47 @@ Use it at your own risk!
 
 # Installation
 
-1. Unzip file and move the folder "babyace" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
+1. Unzip file and move the folder "starlet" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
 
-2. Copy all *.tsb files from "jungmeister" folder from your Aerofly FS4 installation path into "babyace\sounds\" folder.
+2. Copy all *.tsb files from "jungmeister" folder from your Aerofly FS4 installation path into "starlet\sounds\" folder.
 
 # Uninstall
 
-1. Delete the folder "babyace".
+1. Delete the folder "starlet".
 
 # Resources
 
 
 # Note by FTLX Designs:
 
-Corben Baby Ace for X-Plane 11, by FTLX Designs
+Corby CJ-1 Starlet for X-Plane 11, by FTLX Designs
 
-The Ace Baby Ace was the world's first aircraft to be marketed as a homebuilt aircraft when its plans were offered for sale in 1929. Plans are still available and Baby Aces are still being built today. Orland Corben designed a series of aircraft for the Ace Aircraft Manufacturing Company, the Baby Ace, Junior Ace, and Super Ace. Corben's name was associated with the aircraft, and it is commonly known as the Corben Baby Ace.
+The Corby CJ-1 Starlet is a single seat, amateur-built aeroplane designed in the 1960s by Australian aeronautical engineer John Corby. 
 
-General characteristics:
+The structure is primarily wood and fabric. The prototype first flew in 1967, and is a popular design built by enthusiasts in many countries. A variety of engine types have been used, ranging from 60 to 80 brake horsepower (60 kW). It is an agile sportsplane with either an open cockpit and perspex windshield, or a bubble canopy, giving the pilot a "fighter-like" flying experience.
 
-Crew: one, pilot
-Length: 17 ft 11 in (5.46 m)
-Wingspan: 26 ft 6 in (8.08 m)
-Height: 6 ft 7.75 in
-Wing area: 112.3 ft² (10.43 m²)
-Airfoil: Clark Y
-Empty weight: 575 lb (261 kg)
-Loaded weight: 950 lb (430 kg)
-Powerplant: 1× Salmson, Szekely, Continental, or Anzani engine choices., 65-100 hp (50-75 kW)
+Specifications (typical):
 
-Performance:
-Maximum speed: 95 knots (110 mph, 176 km/h)
-Service ceiling: 16,000 ft (4,900 m)
-Rate of climb: 1,200 ft/min (370 m/min) 
+Crew: one pilot
+Length: 4.5 m (14 ft 9 in)
+Wingspan: 5.72 m (18 ft 6 in)
+Wing area: 6.4 m2 (69 sq ft)
+Empty weight: 204 kg (450 lb)
+Gross weight: 340 kg (750 lb)
+Powerplant: 1 × Volkswagen air-cooled engine or Jabiru 2200 , 52–64 kW (70–85 hp)
 
-Flying the Baby Ace:
-To start the engine, click on the fuel cutoff lever, then turn on each of the magnetos.  Then, click the prop once (this turns on the battery, the original aircraft didn't have an electrical system) and then click/hold the prop to start the engine.  Rotation is usually around 40mph and you're usually off the ground before 60.  Approach is around 50-60 and touchdown is around 45-50 depending on weight. 
+Performance
+Maximum speed: 260 km/h (160 mph, 140 kn)
+Range: 685 km (425 mi, 369 nm)
+Rate of climb: 5.6 m/s (1,100 ft/min)
 
-Please note that this aircraft was built using the Experimental Flight Model, so I make no guarantees how it will fly with that option turned off.
+Notes:
+While the Starlet is not approved for aerobatics everywhere, it is a ton of fun!  I attempted to model the 1835 VW engine producing about 65hp (60 continuous), seems to be enough without going over the top (it turns counter-clockwise so left rudder is needed at higher power settings).  The roll rate is more than acceptable and the light weight of the airframe will enable you some pretty fun maneuvers. Be very mindful of your airspeed though, particularly on approach and flare; the 43-series airfoils have a sharp and sudden stall (around 45pmh or so).  I would love to get feedback from someone who has flown this IRL, it would be super helpful for additional flight model improvements.
 
-This aircraft has impressive STOL capability and usually requires less than 200 feet to complete the takeoff roll. It is a fantastic flier and is relativly easy to land despite being a taildragger. Watch your dive speed though, the modeled Continental A65 is only rated for 2300 RPM!  Enjoy flying this bird, it was a real pleasure bringing this to X-Plane.
-
+To start the engine, click on the battery and mags first, then click the prop.  As usual with taildraggers, mind your taxi speed, although the Starlet has a decent track so its relatively stable.  Rotation is around 45-50 (airspeed is in MPH), climb is roughly 75-80 for a decent rate based on my experience.  Approach is around 60-70 and landing should be between 50-60 or so depending on weight.
 
 CREDITS
+Thanks to Craig Richardson for the outstanding visual model used for this, he has impeccable taste in aircraft so this will not be the last time we see his work presented here!
 
-Credit goes to Craig Richardson for the original excellent FSX visual model, and to Laminar Research for the awesome gauges used in their Stinson L5.
-
-LEGAL
-
-This file is FREEWARE. It should not harm your computer, but you install it at your own risk.
-Feel free to copy, modify or distribute it, but if you do, please give me and the original author(s) credit for our modifications. You may not use it for any commercial purposes. 
+LEGAL:
+This file is FREEWARE. It should not harm your computer, but you install it at your own risk. Feel free to copy, modify or distribute it, but if you do, please give me and the original author(s) credit for our modifications. You may not use it for any commercial purposes.
