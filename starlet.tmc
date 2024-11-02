@@ -34,7 +34,7 @@
 //   57|3.0|MiscBody1|0.839 0.739 0.283|0.075000003|Nose & Spinner
 //   77|2.0|Nacelle1|0.259 0.310 0.305|0.075999998|leftenginenacelle
 //   85|3.0|Fairing1|0.629 0.241 0.304|0.096000001|main fairing right
-//   86|3.0|Fairing2|0.629 0.241 0.304|0.096000001|hgiReG tW raleehnaP 
+//   86|3.0|Fairing2|0.629 0.241 0.304|0.096000001|hgiReG tW raleehnaP
 //   gear no|name|X|Y|Z|Type|Fraction|Length|radius|retract|SteerLo|SteerHi|weight|width
 //   gear 0|LeftWheelHull|0.271|0.253|-0.363|2|0.447|0.732|0.171|0.000|0.0000|0.0000|11.4|0.152
 //   gear 1|RightWheelHull|0.271|-0.253|-0.363|2|0.447|0.732|0.171|0.000|0.0000|0.0000|11.4|0.152
@@ -66,7 +66,7 @@
 //-------------------------------------------------------
 // Corby Starlet v1.0 empty mass [kg] :204.1 fuelled [kg] :234.1 max [kg] :340.2
 //-------------------------------------------------------
-// No 0 LeftWheelHull single   
+// No 0 LeftWheelHull single
 // Brakes  Faired Fraction weight: 0.44742 kg :104.7
 // Pivot lon lat vert: 0.270944 0.252984 -0.362712
 // Extended angles   : 0.0 -49.0 0.0  lon lat axi
@@ -76,7 +76,7 @@
 // Deflection [m]- zero load : 0.0506 empty :0.0030 max :0.0061
 // Damping constants (lb/(ft/s)) :202.287155151 kg/(m/s) : 301.0365
 //-------------------------------------------------------
-// No 1 RightWheelHull single   
+// No 1 RightWheelHull single
 // Brakes  Faired Fraction weight: 0.44742 kg :104.7
 // Pivot lon lat vert: 0.270944 -0.252984 -0.362712
 // Extended angles   : 0.0 49.0 0.0  lon lat axi
@@ -96,17 +96,21 @@
 // Deflection [m]- zero load : 0.0665 empty :0.0030 max :0.0061
 // Damping constants (lb/(ft/s)) :36.122707367 kg/(m/s) : 53.7565
 //-------------------------------------------------------
-    <[object][][]
-        <[int][Version][220]>
-        <[vec32array][ContactSpheres][ (0.271 0.805 -0.843 0.171) (0.271 -0.805 -0.843 0.171) (-3.044 0.000 -0.286 0.061) ]>
-        <[string8][ICAO][CJ1]>
+    <[modelinformation][][]
+        <[int32][Version][220]>
+        <[list_vector4_float64][ContactSpheres][ (0.271 0.805 -0.843 0.171) (0.271 -0.805 -0.843 0.171) (-3.044 0.000 -0.286 0.061) ]>
+        <[stringt8c][ICAO][CJ1]>
         <[string8][DisplayName][Corby Starlet]>
         <[string8][DisplayNameFull][Corby CJ-1 Starlet]>
-        <[localized_text_list][Descriptions][]
-            <[localized_text][][]
+        <[list_localized_text][Descriptions][]
+            <[localized_text][element][0]
                 <[string8][Language][en]>
-                <[string8][Text][ The Corby CJ-1 Starlet is a single seat, amateur-built aeroplane designed in the 1960s by Australian aeronautical engineer John Corby. Made by Krzysztof Kaniewski. 3D model: FTLX Designs.]>
+                <[string8][Text][The Corby CJ-1 Starlet is a single seat, amateur-built aeroplane designed in the 1960s by Australian aeronautical engineer John Corby. Made by Krzysztof Kaniewski. 3D model: FTLX Designs.]>
             >
+            <[localized_text][element][1]
+                <[string8][Language][pl]>
+                <[string8][Text][Corby CJ-1 Starlet to jednomiejscowy, amatorski samolot zaprojektowany w latach 60. przez australijskiego inżyniera lotniczego Johna Corby'ego. Wykonany przez Krzysztofa Kaniewskiego. Model 3D: FTLX Designs.]>
+			>
         >
         <[float64][MaximumTakeoffMass][340.2]>
         <[float64][WingSpan]          [5.6]>
@@ -123,7 +127,7 @@
         <[float64][MaximumAltitude]   [6306.0]>
         <[float64][MaximumSpeed]      [79.5]>
         <[float64][MaximumRange]      [2276000.0]>
-        <[tmvector2d][FlapAirspeedRange]   [ 0.0  0.0  ]>	
+        <[tmvector2d][FlapAirspeedRange]   [ 0.0  0.0  ]>
         <[tmvector2d][NormalAirspeedRange] [ 23.5 65.0 ]>
         <[tmvector2d][CautionAirspeedRange][ 65.0 79.5 ]>
         <[string8][Tags][ airplane historical piston general_aviation ultralight gear tailgear ]>
