@@ -1,13 +1,13 @@
 <[file][][]
     <[hints][][]
-        // 
-        <[float64][MaximumTakeOffMass][340.2]>
-        <[float64][WingSpan][5.63]>
-        <[float64][WingArea][6.82]>
+        // Corby Starlet CJ-1 
+        <[float64][MaximumTakeOffMass][340.0]>
+        <[float64][WingSpan][5.72]>
+        <[float64][WingArea][6.4]>
         <[float64][HeightOffset][-1.014]>
         <[float64][ApproachSpeed][30.6]>
         <[float64][PatternSpeed][45.0]>
-        <[float64][InitialClimbSpeed][51.4]>
+        <[float64][InitialClimbSpeed][35.0]>
         <[int][EngineCount][1]>
         <[bool][Piston][true]>
         <[bool][GeneralAviation][true]>

@@ -1,4 +1,77 @@
 <[file][][]
+    <[modelinformation][][]
+        <[int32][Version][220]>
+        <[list_vector4_float64][ContactSpheres][ (0.2699 -0.8102 -0.8658 0.17) (0.2699 0.8102 -0.8658 0.17) (-3.045 0.000 -0.324 0.059) ]>
+        <[stringt8c][ICAO][CJ1]>
+        <[string8][DisplayName][Corby Starlet]>
+        <[string8][DisplayNameFull][Corby Starlet CJ-1]>
+        <[list_localized_text][Descriptions][]
+            <[localized_text][element][0]
+                <[string8u][Language][en]>
+                <[string8][Text][The Corby Starlet CJ-1 is a single seat, amateur-built aeroplane designed in the 1960s by Australian aeronautical engineer John Corby. It is stressed for sportsmen aerobatics at 4.5g. The design has established a reputation for excellent performance for its horsepower and capability being both cross country plane and an excellent aerobatic platform. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model: FTLX Designs.]>
+            >
+            <[localized_text][element][1]
+                <[string8u][Language][de]>
+                <[string8][Text][Die Corby Starlet CJ-1 ist ein einsitziges, in Eigenbau hergestelltes Flugzeug, das in den 1960er Jahren vom australischen Luftfahrtingenieur John Corby entworfen wurde. Es ist für sportliche Kunstflüge mit einer Belastung von 4,5g ausgelegt. Die Konstruktion hat sich einen Ruf für hervorragende Leistung in Bezug auf Motorleistung und Vielseitigkeit erworben, da sie sowohl ein Langstreckenflugzeug als auch eine exzellente Kunstflugplattform ist. Für Aerofly FS4 erstellt von Krzysztof Kaniewski. Originales 3D-Modell: FTLX Designs.]>
+			>			
+            <[localized_text][element][2]
+                <[string8u][Language][pl]>
+                <[string8][Text][Corby Starlet CJ-1 to jednomiejscowy, amatorski samolot zaprojektowany w latach 60. przez australijskiego inżyniera lotniczego Johna Corby'ego. Jest przystosowany do akrobacji sportowych przy obciążeniu 4,5g. Konstrukcja zdobyła renomę dzięki doskonałym osiągom w stosunku do mocy silnika i możliwości, będąc jednocześnie samolotem do lotów długodystansowych oraz doskonałą platformą akrobacyjną. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Orginalny model 3D: FTLX Designs.]>
+			>
+        >
+        <[float64][MaximumTakeoffMass][340.0]>
+        <[float64][WingSpan]          [5.6]>
+        <[uint32] [Year]              [1973]>
+        <[uint32] [UnitsBuilt]        [6884]>
+        <[uint32] [EngineCount]       [1]>
+        <[float64][EnginePower]       [48470]>
+        <[float64][MinimumAirspeed]   [23.5]>
+        <[float64][ApproachAirspeed]  [30.6]>
+        <[float64][CruiseAirspeed]    [71.6]>
+        <[float64][CruiseAltitude]    [3352.8]>
+        <[float64][CruiseSpeed]       [75.5]>
+        <[float64][MaximumAirspeed]   [79.5]>
+        <[float64][MaximumAltitude]   [6306.0]>
+        <[float64][MaximumSpeed]      [79.5]>
+        <[float64][MaximumRange]      [685000.0]>
+        <[vector2_float64][FlapAirspeedRange]   [ 0.0  0.0  ]>
+        <[vector2_float64][NormalAirspeedRange] [ 23.5 65.0 ]>
+        <[vector2_float64][CautionAirspeedRange][ 65.0 79.5 ]>
+        <[string8][Tags][ airplane historical piston general_aviation ultralight aerobatic gear tailgear ]>
+        <[string8][Pilot][]>
+    >
+>
+
+// https://corbystarlet.tripod.com/tech.htm
+
+// General characteristics
+
+// Crew: one pilot
+// Length: 4.5 m (14 ft 9 in)
+// Wingspan: 5.72 m (18 ft 6 in)
+// Wing area: 6.4 m2 (69 sq ft)
+// Empty weight: 230 kg (500 lb)
+// Gross weight: 340 kg (750 lb)
+// Powerplant: 1 × Volkswagen air-cooled engine or Jabiru 2200 , 52–64 kW (70–85 hp)
+
+// Performance
+
+// Maximum speed: 260 km/h (160 mph, 140 kn)
+// Range: 685 km (425 mi, 369 nmi)
+// Rate of climb: 5.6 m/s (1,100 ft/min)
+
+// Standard Engine: VW 1600CC-2100CC
+// Horsepower: 50-70
+// Wing Span: 18.6'
+// Wing Area: 68.5 sq ft
+// Empty Weight: 425 lbs
+// Gross Weight: 750 lbs
+// Takeoff Distance: 300'
+// Landing Distance: 750'
+// Cruise Speed: 123 mph
+// Top Speed: 160 mph
+// Fuel Capacity: 11 Gallons
+
 // ACF shifted [m] x:1.1 y:0 z:0
 // Cockpit type: General Aviation
 // Vso_kts: 47.0 stall speed in landing configuration
@@ -96,41 +169,3 @@
 // Deflection [m]- zero load : 0.0665 empty :0.0030 max :0.0061
 // Damping constants (lb/(ft/s)) :36.122707367 kg/(m/s) : 53.7565
 //-------------------------------------------------------
-    <[modelinformation][][]
-        <[int32][Version][220]>
-        <[list_vector4_float64][ContactSpheres][ (0.271 0.805 -0.843 0.171) (0.271 -0.805 -0.843 0.171) (-3.044 0.000 -0.286 0.061) ]>
-        <[stringt8c][ICAO][CJ1]>
-        <[string8][DisplayName][Corby Starlet]>
-        <[string8][DisplayNameFull][Corby CJ-1 Starlet]>
-        <[list_localized_text][Descriptions][]
-            <[localized_text][element][0]
-                <[string8][Language][en]>
-                <[string8][Text][The Corby CJ-1 Starlet is a single seat, amateur-built aeroplane designed in the 1960s by Australian aeronautical engineer John Corby. Made by Krzysztof Kaniewski. 3D model: FTLX Designs.]>
-            >
-            <[localized_text][element][1]
-                <[string8][Language][pl]>
-                <[string8][Text][Corby CJ-1 Starlet to jednomiejscowy, amatorski samolot zaprojektowany w latach 60. przez australijskiego inżyniera lotniczego Johna Corby'ego. Wykonany przez Krzysztofa Kaniewskiego. Model 3D: FTLX Designs.]>
-			>
-        >
-        <[float64][MaximumTakeoffMass][340.2]>
-        <[float64][WingSpan]          [5.6]>
-        <[uint]   [Year]              [1960]>
-        <[uint]   [UnitsBuilt]        [6884]>
-        <[uint]   [EngineCount]       [1]>
-        <[float64][EnginePower]       [48470]>
-        <[float64][MinimumAirspeed]   [23.5]>
-        <[float64][ApproachAirspeed]  [30.6]>
-        <[float64][CruiseAirspeed]    [71.6]>
-        <[float64][CruiseAltitude]    [3352.8]>
-        <[float64][CruiseSpeed]       [75.5]>
-        <[float64][MaximumAirspeed]   [79.5]>
-        <[float64][MaximumAltitude]   [6306.0]>
-        <[float64][MaximumSpeed]      [79.5]>
-        <[float64][MaximumRange]      [2276000.0]>
-        <[tmvector2d][FlapAirspeedRange]   [ 0.0  0.0  ]>
-        <[tmvector2d][NormalAirspeedRange] [ 23.5 65.0 ]>
-        <[tmvector2d][CautionAirspeedRange][ 65.0 79.5 ]>
-        <[string8][Tags][ airplane historical piston general_aviation ultralight gear tailgear ]>
-        <[string8][Pilot][]>
-    >
->
