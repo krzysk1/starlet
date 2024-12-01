@@ -22,7 +22,6 @@
             // cameras start
 
             <[camera][CameraFollow][]
-                <[string8][Description][Behind aircraft]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -6.7 0.0 0.8 ]>
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
@@ -30,7 +29,7 @@
             <[camera_head][CameraPilot][]
                 <[string8][Tags][cockpit pilot]>
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -0.333 0.000 0.457 ]>
+                <[tmvector3d][R0][ -0.33 0.000 0.44 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][Kf][40.0]>
                 <[float64][Df][1.00]>
@@ -268,7 +267,9 @@
             // fuel
 
             // payload
-
+			
+				//mass: 234.0  cm=(-0.001 0.000 -0.096) dodać pilota 70 kg
+				
             // rigidbody systems end
 
 
