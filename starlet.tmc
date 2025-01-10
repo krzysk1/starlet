@@ -13,7 +13,7 @@
             <[localized_text][element][1]
                 <[string8u][Language][de]>
                 <[string8][Text][Die Corby Starlet CJ-1 ist ein einsitziges, in Eigenbau hergestelltes Flugzeug, das in den 1960er Jahren vom australischen Luftfahrtingenieur John Corby entworfen wurde. Es ist für sportliche Kunstflüge mit einer Belastung von 4,5g ausgelegt. Die Konstruktion hat sich einen Ruf für hervorragende Leistung in Bezug auf Motorleistung und Vielseitigkeit erworben, da sie sowohl ein Langstreckenflugzeug als auch eine exzellente Kunstflugplattform ist. Für Aerofly FS4 erstellt von Krzysztof Kaniewski. Originales 3D-Modell: FTLX Designs.]>
-			>			
+			>
             <[localized_text][element][2]
                 <[string8u][Language][pl]>
                 <[string8][Text][Corby Starlet CJ-1 to jednomiejscowy, amatorski samolot zaprojektowany w latach 60. przez australijskiego inżyniera lotniczego Johna Corby'ego. Jest przystosowany do akrobacji sportowych przy obciążeniu 4,5g. Konstrukcja zdobyła renomę dzięki doskonałym osiągom w stosunku do mocy silnika i możliwości, będąc jednocześnie samolotem do lotów długodystansowych oraz doskonałą platformą akrobacyjną. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Orginalny model 3D: FTLX Designs.]>
@@ -34,6 +34,7 @@
         <[float64][MaximumAltitude]   [6306.0]>
         <[float64][MaximumSpeed]      [79.5]>
         <[float64][MaximumRange]      [685000.0]>
+		<[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
         <[vector2_float64][NormalAirspeedRange] [ 23.5 65.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 65.0 79.5 ]>
         <[string8][Tags][ airplane historical piston general_aviation ultralight aerobatic gear tailgear ]>
