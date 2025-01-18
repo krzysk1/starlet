@@ -34,7 +34,6 @@
         <[float64][MaximumAltitude]   [6306.0]>
         <[float64][MaximumSpeed]      [79.5]>
         <[float64][MaximumRange]      [685000.0]>
-		<[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
         <[vector2_float64][NormalAirspeedRange] [ 23.5 65.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 65.0 79.5 ]>
         <[string8][Tags][ airplane historical piston general_aviation ultralight aerobatic gear tailgear ]>
