@@ -7,7 +7,7 @@
     // CREDITS: Thanks to Craig Richardson for the outstanding visual model used for this, he has impeccable taste in aircraft so this will not be the last time we see his work presented here!
     // LEGAL: This file is FREEWARE. It should not harm your computer, but you install it at your own risk.
     // Feel free to copy, modify or distribute it, but if you do, please give me and the original author(s) credit for our modifications. You may not use it for any commercial purposes.
-    // Date: Mon Jan 08 2024; Nov 2024
+    // Date: Mon Jan 08 2024; Nov 2024; Sep 2025
     //-------------------------------------
 
     <[modelmanager][][]
@@ -16,7 +16,6 @@
             // telemetry
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][ 0.1 0.0 -0.0 ]>
             >
 
             // cameras start
@@ -38,14 +37,14 @@
                 <[bool][InCockpit][true]>
             >
             <[camera][CameraLeftWing][]
-                <[string8][Tags][left wing]>
+                <[string8][Tags][fuselage wing left]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ 2.110 2.816 -0.703 ]>
                 <[tmvector3d][Direction][ -0.7331 -0.6598 0.1648 ]>
                 <[bool][InCockpit][false]>
             >
             <[camera][CameraRightWing][]
-                <[string8][Tags][right wing]>
+                <[string8][Tags][fuselage wing right]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -1.369 -2.816 0.674 ]>
                 <[tmvector3d][Direction][ 0.1202 0.9655 -0.2310 ]>
@@ -59,7 +58,7 @@
                 <[bool][InCockpit][false]>
             >
             <[camera][CameraTail][]
-                <[string8][Tags][tail]>
+                <[string8][Tags][tail stabilizer]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -2.369 0.000 1.123 ]>
                 <[tmvector3d][Direction][ 0.7690 0.0000 -0.6393 ]>
@@ -267,9 +266,9 @@
             // fuel
 
             // payload
-			
+
 				//mass: 234.0  cm=(-0.001 0.000 -0.096) dodać pilota 70 kg
-				
+
             // rigidbody systems end
 
 
@@ -1004,7 +1003,6 @@
                 <[string8][Input][CanopySequence.Output]>
             >
 
-
             // animations end
 
 
@@ -1197,10 +1195,6 @@
                 <[uint32][InputID][ServoCheck.Output]> //static_translation
                 <[float64][Scaling][1.0000]>
             >
-            <[graphics_input][Canopy_ratio_Input][]
-                <[uint32][InputID][ServoCockpit.Output]> //sim/flightmodel/controls/canopy_ratio
-                <[float64][Scaling][1.0000]>
-            >
             <[graphics_input][Ignition_on_0_Input][]
                 <[uint32][InputID][ServoCheck.Output]> //sim/cockpit/engine/ignition_on[0]
                 <[float64][Scaling][1.0000]>
@@ -1273,11 +1267,11 @@
                 <[uint32][InputID][ServoCheck.Output]> //sim/flightmodel/forces/g_side
                 <[float64][Scaling][1.0000]>
             >
-			
+
         // gauges
         // --------------------------------
             <[rigidbodygraphics][Gauges_2049_2][]
-                <[string8][GeometryList][ Gauges2 Gauges20492 Gauges68972 Gauges66032 ]>
+                <[string8][GeometryList][ Gauges2 Gauges20492 Gauges66032 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -2065,19 +2059,7 @@
                 <[string8][InputID][ServoThrottle.Output]>
                 <[tmvector3d][Axis][0.071701 -0.006240 -0.000654]> // 0.071975
             >
-			// canopy locks
-            <[graphics_linear_interpolation][starletMapping_2478][]
-                <[string8][Input][Canopy_ratio_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.0)(0.005000 0.261799)(1.0 0.261799)]>
-            >
-            <[hingedbodygraphics][CanopyLocks][]
-                <[string8][GeometryList][ Starlet573334 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][Input][starletMapping_2478.Output]>
-                <[tmvector3d][Axis][0.0 1.0 0.0]>
-                <[tmvector3d][Pivot][-0.137844 -0.001800 0.085763]>
-            >
+
 			// tail wheel
             <[graphics_linear_interpolation][starletMapping_2488][]
                 <[string8][Input][Static_rotation_Input.Output]> //static_rotation
@@ -2179,7 +2161,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][starletMoving_2544.Output]>
             >
-			
+
         // starlet1
         // --------------------------------
             <[rigidbodygraphics][Fuselage][]
@@ -2506,20 +2488,33 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][starlet4Rotate_4488.Output]>
             >
-            <[graphics_linear_interpolation][starlet4Mapping_4797][]
-                <[string8][Input][Static_translation_Input.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.417400)]>
+
+			// canopy locks
+            <[graphics_input][Canopy_ratio_Input][]
+                <[uint32][InputID][CanopySequence.Output]>
             >
-            <[graphics_translation][starlet4Moving_4797][]
-                <[string8][Input][starlet4Mapping_4797.Output]>
-                <[tmvector3d][Axis][-0.417400 0.0 0.0]>
+            <[graphics_linear_interpolation][starletMapping_2478][]
+                <[string8][Input][Canopy_ratio_Input.Output]>
+                <[tmvector2d][Map][(0.0 0.0)(0.005 0.261799)]>
             >
-            <[rigidbodygraphics][Starlet4_9534_8][]
-                <[string8][GeometryList][ Starlet495348 ]>
+            <[hingedbodygraphics][CanopyLocks][]
+                <[string8][GeometryList][ Starlet573334 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][starlet4Moving_4797.Output]>
+                <[string8][Input][starletMapping_2478.Output]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][-0.137844 -0.001800 0.085763]>
             >
+
+            <[movinggraphics][Canopy][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][GeometryList][ Starlet495348 Starlet0glass12 Gauges68972 Starlet61423210 Starlet573334Wood ]>
+                <[tmvector3d][Axis][-1.0 0.0 0.0]>
+                <[uint32][InputID][CanopySequence.Output]>
+                <[float64][Scaling][0.417400]>
+            >
+
         // starlet5
         // --------------------------------
             <[rigidbodygraphics][Starlet5_9][]
@@ -2546,7 +2541,7 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.191115 0.034383 -0.049665]>
             >
-			
+
             <[graphics_linear_interpolation][starlet6Mapping_5810][]
                 <[string8][Input][Yoke_pitch_ratio_Input.Output]>
                 <[tmvector2d][Map][(-1.0 -0.174533)(0.0 0.0)(1.0 0.261799)]>
@@ -2558,7 +2553,7 @@
                 <[string8][Input][starlet6Mapping_5810.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][-0.154180 0.047229 -0.392220]>
-            >			
+            >
             <[graphics_linear_interpolation][starlet6Mapping_5837][]
                 <[string8][Input][Yoke_roll_ratio_Input.Output]>
                 <[tmvector2d][Map][(-1.0 -0.261799)(0.0 0.0)(1.0 0.261799)]>
@@ -2570,7 +2565,7 @@
                 <[tmvector3d][Pivot][-0.136146 -0.001750 -0.393805]>
                 <[string8][Graphics][Starlet6_7782_10]>
             >
-			
+
             <[graphics_linear_interpolation][starlet6Mapping_5932][]
                 <[string8][Input][Static_translation_Input.Output]>
                 <[tmvector2d][Map][ (-1.0 0.0) (0.0 0.067029)]>
@@ -2634,19 +2629,8 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-			
-            <[graphics_linear_interpolation][starlet6Mapping_5981][]
-                <[string8][Input][Canopy_ratio_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.0)(0.005000 0.261799)(1.0 0.261799)]>
-            >
-            <[hingedbodygraphics][Starlet6_14232_10][]
-                <[string8][GeometryList][ Starlet61423210 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][Input][starlet6Mapping_5981.Output]>
-                <[tmvector3d][Axis][0.0 1.0 0.0]>
-                <[tmvector3d][Pivot][-0.137844 -0.001800 0.085763]>
-            >
+
+
 
             <[graphics_linear_interpolation][starlet6Mapping_6043][]
                 <[string8][Input][Static_translation_Input.Output]>
@@ -2672,20 +2656,6 @@
 
         // Starlet_0_glass
         // --------------------------------
-            <[graphics_linear_interpolation][Starlet_0_glassMapping_7120][]
-                <[string8][Input][Static_translation_Input.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.417400)]>
-            >
-            <[graphics_translation][Starlet_0_glassMoving_7120][]
-                <[string8][Input][Starlet_0_glassMapping_7120.Output]>
-                <[tmvector3d][Axis][-0.417400 0.0 0.0]>
-            >
-            <[rigidbodygraphics][Starlet_0_glass_12][]
-                <[string8][GeometryList][ Starlet0glass12 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][Starlet_0_glassMoving_7120.Output]>
-            >
 
             <[rigidbodygraphics][Starlet_0_glass_1962_12][]
                 <[string8][GeometryList][ Starlet0glass196212 ]>

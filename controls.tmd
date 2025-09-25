@@ -1,0 +1,66 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmcontrol][ControlObjects][]
+
+    //   wzdłuż   <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+    //   stick    <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
+    //   w poprzek <[matrix3_float64][B0][ 0.0 -1.0 0.0  1.0 0.0 0.0  0.0 0.0 1.0 ]>
+
+			// canopy handle
+            <[control_input][CanopyHandleInput][]
+                <[uint32][InputID][CanopySequence.Output]>
+                <[float64][Scaling][0.417400]>
+            >
+            <[control_translation][CanopyHandleTranslation][]
+                <[string8][Input][CanopyHandleInput.Output]>
+                <[tmvector3d][Axis][-1.0 0.0 0.0]>
+            >
+            <[control_cylinder][CanopyHandleLeft][]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][-0.1699 0.2751 0.09566]>
+                <[matrix3_float64][B0][ 0.0 -1.0 0.0  1.0 0.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ -1.0 0.0 0.0 ]>
+                <[string8][InputTransform][CanopyHandleTranslation.Output]>
+                <[float64][StepDistance][0.002]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Canopy]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.01]>
+            >
+            <[control_cylinder][CanopyHandleRight][]
+                <[string8][Type][switch toggle]>
+                <[vector3_float64][R0][-0.1699 -0.2751 0.09566]>
+                <[matrix3_float64][B0][ 0.0 -1.0 0.0  1.0 0.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ -1.0 0.0 0.0 ]>
+                <[string8][InputTransform][CanopyHandleTranslation.Output]>
+                <[float64][StepDistance][0.002]>
+                <[control_message][OnStep][]
+                    <[string8][Message][Controls.Canopy]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.01]>
+                <[float64][Length][0.01]>
+            >			
+			// barometer setting	
+            <[control_cylinder][PressureSetting][]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][0.072820 -0.097328 0.155026]>
+                <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][Controls.PressureSetting0]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.1]>
+                >
+                <[float64][Radius][0.005]>
+                <[float64][Length][0.004]>
+            >			
+			
+        >
+    >
+>
