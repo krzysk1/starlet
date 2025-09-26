@@ -2298,34 +2298,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][starletMoving_2441.Output]>
             >
-            <[graphics_linear_interpolation][starletMapping_2459][]
-                <[string8][Input][Static_translation_Input.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.024700)]>
-            >
-            <[graphics_translation][starletMoving_2459][]
-                <[string8][Input][starletMapping_2459.Output]>
-                <[tmvector3d][Axis][-0.024700 0.0 0.0]>
-            >
-            <[rigidbodygraphics][Starlet_55065_4][]
-                <[string8][GeometryList][ Starlet550654 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][starletMoving_2459.Output]>
-            >
-            <[graphics_linear_interpolation][starletMapping_2464][]
-                <[string8][Input][Static_translation_Input.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (0.8 0.024700)]>
-            >
-            <[graphics_translation][starletMoving_2464][]
-                <[string8][Input][starletMapping_2464.Output]>
-                <[tmvector3d][Axis][0.024700 0.0 0.0]>
-            >
-            <[rigidbodygraphics][Starlet_55377_4][]
-                <[string8][GeometryList][ Starlet553774 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][starletMoving_2464.Output]>
-            >
+
             <[graphics_linear_interpolation][starletMapping_2468][]
                 <[string8][Input][Static_translation_Input.Output]>
                 <[tmvector2d][Map][ (0.0 0.0) (0.8 0.018238)]>
@@ -2441,8 +2414,8 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputID][PrimerLever.Output]>
-                <[tmvector3d][Axis][-0.079019 0.0 0.000001]>
-                <[float64][Scaling][0.079019]>
+                <[tmvector3d][Axis][-1.0 0.0 0.0]>
+                <[float64][Scaling][0.069019]>
             >
 
         // starlet1
@@ -2865,20 +2838,20 @@
             >
 			// carb heat lever
             <[movinggraphics][CarburettorHeatLever][]
-                <[string8][GeometryList][ Starlet61070410 ]>
+                <[string8][GeometryList][ Starlet61070410 Starlet550654 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputID][CarburettorHeatLever.Output]>
-                <[tmvector3d][Axis][-0.024700 0.0 0.0]>
-                <[float64][Scaling][0.024700]>
+                <[tmvector3d][Axis][-1.0 0.0 0.0]>
+                <[float64][Scaling][0.0247]>
             >
             <[movinggraphics][MixtureLever][]
-                <[string8][GeometryList][ Starlet61155610 ]>
+                <[string8][GeometryList][ Starlet61155610 Starlet553774 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputID][MixtureLever.Output]>
-                <[tmvector3d][Axis][0.024700 0.0 0.0]>
-                <[float64][Scaling][0.024700]>
+                <[tmvector3d][Axis][1.0 0.0 0.0]>
+                <[float64][Scaling][0.0247]>
             >
 
 
