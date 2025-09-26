@@ -19,6 +19,8 @@ Use it at your own risk!
 
 # Resources
 
+https://aeropedia.com.au/content/corby-cj-1-starlet/
+https://corbystarlet.tripod.com/tech.htm
 
 # Note by FTLX Designs:
 
