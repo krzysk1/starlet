@@ -1,7 +1,7 @@
 <[file][][]
     <[modelinformation][][]
         <[int32][Version][220]>
-        <[list_vector4_float64][ContactSpheres][ (0.2699 -0.8102 -0.8658 0.17) (0.2699 0.8102 -0.8658 0.17) (-3.045 0.000 -0.324 0.059) ]>
+        <[list_vector4_float64][ContactSpheres][ (0.2699 -0.8102 -0.8658 0.17) (0.2699 0.8102 -0.8658 0.17) (-3.055 0.000 -0.324 0.059) ]>
         <[stringt8c][ICAO][CJ1]>
         <[string8][DisplayName][Corby Starlet]>
         <[string8][DisplayNameFull][Corby Starlet CJ-1]>
