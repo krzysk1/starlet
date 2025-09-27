@@ -1419,6 +1419,11 @@
             <[heading_indicator][HeadingIndicator][]
                 <[string8][Body][Fuselage]>
             >
+            <[needle][HeadingIndicatorBall][]
+                <[float64][Speed]  [20.0]>
+                <[float64][Damping][0.8]>
+                <[string8][Input][HeadingIndicator.MagneticHeading]>
+            >
             <[sender][SenderMagneticHeading][]
                 <[string8][Input][HeadingIndicator.MagneticHeading]>
                 <[string8][Message][Aircraft.MagneticHeading]>
@@ -1461,7 +1466,7 @@
             >
 
             <[rigidbodygraphics][Fuselage][]
-                <[string8][GeometryList][ Starlet15 DecalCorby1 Starlet26 Starlet37 Starlet48 Starlet610  Starlet59 Starlet011 Starlet61240810 Starlet0glass196212 Starlet0glass224412 Starlet4 RegNumber Gauges2 Gauges20492 Gauges66032 ]>
+                <[string8][GeometryList][ Starlet15 DecalCorby1 Starlet26 Starlet37 Starlet48 Starlet610  Starlet59 Starlet011 Starlet61240810 Starlet0glass196212 Starlet0glass224412 Starlet4 RegNumber Gauges2 Gauges20492 Gauges66032 GaugeGlass ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
@@ -1723,10 +1728,14 @@
                 <[string8][InputTransform][BalanceIndicatorRotate1.Output]>
             >
             // magnetic compass
-            <[rigidbodygraphics][MagneticCompassCard][]
+            <[hingedbodygraphics][MagneticCompassCard][]
+                <[string8][GeometryList][ Gauges37232 ]>
                 <[uint32][PositionID][MagneticCompassCard.R]>
                 <[uint32][OrientationID][MagneticCompassCard.Q]>
-                <[string8][GeometryList][ Gauges37232 ]>
+                <[string8][InputID][HeadingIndicatorBall.Output]>
+                <[tmvector3d][Axis][0.0 0.0 1.0]>
+                <[tmvector3d][Pivot][0.097480 -0.001966 0.342757]>
+                <[float64][Scaling][2]>
             >
 			// clock needles
             <[graphics_input][LocalTime][]
@@ -2086,7 +2095,6 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][starletRotate_2416.Output]>
             >
-
 			// far pedal wires
             <[graphics_linear_interpolation][starletMapping_2426][]
                 <[string8][Input][YokeHeadingInput.Output]>
