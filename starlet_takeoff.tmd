@@ -1,0 +1,19 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+            <[input_lever][MixtureLever][]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][MasterBatterySwitch][]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][LeftMagneto][]
+                <[float64][Value][1.0]>
+            >
+            <[input_switch][RightMagneto][]
+                <[float64][Value][1.0]>
+            >
+        >
+    >
+>

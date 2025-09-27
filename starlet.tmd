@@ -1870,7 +1870,7 @@
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
                 <[tmvector3d][Pivot][0.191115 0.034383 -0.049665]>
                 <[float64][Scaling][0.654499]>
-            >			
+            >
 			// fuel level indicator
             <[graphics_input][FuelTankLevel][]
                 <[uint32][InputID][FuelTank.Output]>
