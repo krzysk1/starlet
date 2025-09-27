@@ -1404,6 +1404,9 @@
             // clocks
             <[clock][Clock][]
             >
+            <[output][UniversalTime][]
+                <[string8][Input][Clock.OutputUniversalTime]>
+            >
             <[output][LocalTime][]
                 <[string8][Input][Clock.OutputLocalTime]>
             >
@@ -2518,12 +2521,75 @@
                 <[float64][RotationSpeedFade][80.0]>
                 <[uint32][NumberStops][0]>
             >
-
-			// pilot 
+            // human animation
             <[rigidbodygraphics][PilotBody][]
-                <[string8][GeometryList][ Pilot3 Starlet360544  Starlet512609 ]>
+                <[string8][GeometryList][ Pilot3 Starlet360544 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
+                <[uint32][ShowInside][9]>
+            >
+            <[graphics_input][UniversalTime][]
+                <[uint32][InputID][UniversalTime.Output]>
+            >
+            <[graphics_flasher][BeaconHeadRotation][]
+                <[string8][Function][Triangle]>
+                <[string8][InputTime][UniversalTime.Output]>
+                <[float64][Period][28.49]>
+                <[float64][Minimum][0.0]>
+            >
+            <[graphics_linear_interpolation][BeaconHeadTimeBaseInput][]
+                <[uint32][Input][BeaconHeadRotation.Output]>
+                <[tmvector2d][Map][(0 0) (1 360)]>
+            >
+            <[graphics_linear_interpolation][BeaconHeadRollMapping][]
+                <[string8][Input][BeaconHeadTimeBaseInput.Output]>
+                <[tmvector2d][Map][(0.0 0.0) (140.0 0.040666) (280.0 0.043633) (360.0 0.052011) ]>
+            >
+            <[graphics_rotation][BeaconHeadRollMappingRotation][]
+                <[string8][Input][BeaconHeadRollMapping.Output]>
+                <[tmvector3d][Axis][ -1.0 0.0 0.0 ]>
+                <[tmvector3d][Pivot][-0.4819 0.00795 0.3240]>
+            >
+            <[graphics_linear_interpolation][BeaconHeadYawMapping][]
+                <[string8][Input][BeaconHeadTimeBaseInput.Output]>
+                <[tmvector2d][Map][(0.0 0.0) (140.0 -0.334587) (280.0 0.274533) (360.0 -0.102443) ]>
+            >
+            <[graphics_rotation][BeaconHeadYawRotation][]
+                <[string8][Input][BeaconHeadYawMapping.Output]>
+                <[tmvector3d][Axis][ 0.0 0.0 1.0 ]>
+                <[tmvector3d][Pivot][-0.4819 0.00795 0.3240]>
+                <[string8][InputTransform][BeaconHeadRollMappingRotation.Output]>
+            >
+            <[graphics_linear_interpolation][BeaconHeadPitchMapping][]
+                <[string8][Input][BeaconHeadTimeBaseInput.Output]>
+                <[tmvector2d][Map][(0.0 0.0) (140.0 -0.096168) (280.0 -0.037176) (360.0 0.006807) ]>
+            >
+            <[graphics_rotation][BeaconHeadTransform][]
+                <[string8][Input][BeaconHeadPitchMapping.Output]>
+                <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
+                <[tmvector3d][Pivot][-0.4819 0.00795 0.3240]>
+                <[string8][InputTransform][BeaconHeadYawRotation.Output]>
+            >
+
+            <[graphics_input][PilotHeadInput][]
+                <[uint32][InputID][ServoRudder.Output]>
+                <[float64][Scaling][-2.8648]>
+            >
+            <[graphics_linear_interpolation][PilotHeadMapping][]
+                <[string8][Input][PilotHeadInput.Output]>
+                <[tmvector2d][Map][(-1 -0.42) (0 0.0) (1 0.42)]>
+            >
+            <[graphics_rotation][PilotHeadTransform][]
+                <[string8][Input][PilotHeadMapping.Output]>
+                <[tmvector3d][Axis][ 0.0 0.0 1.0 ]>
+                <[tmvector3d][Pivot][-0.4819 0.00795 0.3240]>
+                <[string8][InputTransform][BeaconHeadTransform.Output]>
+            >
+            <[rigidbodygraphics][PilotHeadBody][]
+                <[string8][GeometryList][ PilotHead3 PilotHeadphones3 Starlet512609 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputTransform][PilotHeadTransform.Output]>
                 <[uint32][ShowInside][9]>
             >
         >
