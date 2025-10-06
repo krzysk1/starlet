@@ -2,10 +2,6 @@
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
 
-    //   wzdłuż   <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
-    //   stick    <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
-    //   w poprzek <[matrix3_float64][B0][ 0.0 -1.0 0.0  1.0 0.0 0.0  0.0 0.0 1.0 ]>
-
 			// canopy handle
             <[control_input][CanopyHandleInput][]
                 <[uint32][InputID][CanopySequence.Output]>
