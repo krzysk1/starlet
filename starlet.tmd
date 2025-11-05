@@ -1420,8 +1420,8 @@
                 <[string8][Body][Fuselage]>
             >
             <[needle][HeadingIndicatorBall][]
-                <[float64][Speed]  [20.0]>
-                <[float64][Damping][0.8]>
+                <[float64][Speed]  [40.0]>
+                <[float64][Damping][0.9]>
                 <[string8][Input][HeadingIndicator.MagneticHeading]>
             >
             <[sender][SenderMagneticHeading][]
